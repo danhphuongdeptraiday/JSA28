@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="newName" />
+    <button id="btn">Change Name</button>
+    <h1 id="name">Châu</h1>
+
+    <script>
+      let newName1 = document.getElementById("newName");
+      let btn1 = document.getElementById("btn");
+      let name = document.getElementById("name");
+      btn1.addEventListener("click", function () {
+        name.innerText = newName1.value;
+      });
+    </script>
+  </body>
+</html>

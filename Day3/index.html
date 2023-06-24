@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+    <style>
+      .item {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>LocalStorage</h1>
+    <p>Dùng để store dữ liệu vào browser</p>
+    <button id="delete">Delete</button>
+
+    <div class="input_container">
+      <input type="text" id="key" placeholder="Key" />
+      <input type="text" id="value" placeholder="Value" />
+      <button>Add to LocalStorage</button>
+    </div>
+
+    <div class="container">
+      <div class="item">
+        <div class="keyItem">New Key</div>
+        <div>:</div>
+        <div class="valueItem">Giá trị vừa thêm</div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
