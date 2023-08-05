@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 400px;
+        min-height: 200px;
+        border: 2px solid blue;
+        padding: 20px;
+      }
+
+      .title {
+        color: red;
+      }
+
+      .card {
+        border: 2px solid black;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+
+      #hihi {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="add_button">add</button>
+    <div class="container">
+      <div class="card">
+        <h1 class="title">Nguyễn Danh Phương</h1>
+        <p>Tôi thích làm đôn chề</p>
+      </div>
+
+      <div class="card">
+        <h1 class="title">Nguyễn Danh Phương</h1>
+        <p>Tôi thích làm đôn chề</p>
+      </div>
+    </div>
+
+    <input type="checkbox" name="" id="hihi" />
+
+    <script>
+      let add_button = document.getElementById("add_button");
+      let container = document.querySelector(".container");
+      add_button.addEventListener("click", function () {
+        let new_div = document.createElement("div");
+        new_div.className = "card";
+        new_div.innerHTML = `
+            <h1 class="title">Nguyễn Danh Phương</h1>
+            <p>Tôi thích làm đôn chề</p>
+        `;
+        container.appendChild(new_div);
+      });
+
+      let a = 12;
+      let b = "hihi";
+      //   let lop = "tôi năm nay học lớp " + a + " tôi cảm thấy rất vui khi đỗ c3";
+      let lop = `tôi năm nay học lớp ${a} tôi cảm thấy rất vui khi đỗ c3 ${b}`;
+      console.log(lop);
+    </script>
+  </body>
+</html>

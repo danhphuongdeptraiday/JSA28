@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day4</title>
+    <style>
+      .container {
+        width: 500px;
+        min-height: 400px;
+        background-color: rgb(164, 199, 230);
+        border: 5px solid black;
+      }
+
+      .item {
+        display: flex;
+      }
+
+      .keyItem {
+        flex: 1;
+        height: 50px;
+        background-color: rgb(32, 102, 162);
+      }
+
+      .valueItem {
+        flex: 3;
+        height: 50px;
+        background-color: rgb(66, 220, 151);
+      }
+
+      .delete {
+        flex: 1;
+        height: 50px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="asd"></h1>
+    <h1 class="asd"></h1>
+    <h1 class="asd"></h1>
+
+    <input type="text" id="inputkey" placeholder="Key" />
+    <input type="text" id="inputvalue" placeholder="Value" />
+    <button id="add">Add to localStorage</button>
+
+    <div class="container">
+      <div class="item">
+        <div class="keyItem">Key</div>
+        <div class="valueItem">Value</div>
+        <div class="delete">X</div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
